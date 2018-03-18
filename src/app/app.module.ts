@@ -3,11 +3,15 @@ import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import {MatModule} from './mat/mat.module';
+import { HeaderComponent } from './header/header.component';
+import { AsideComponent } from './aside/aside.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,
