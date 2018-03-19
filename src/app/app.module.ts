@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import {MatModule} from './mat/mat.module';
 import { HeaderComponent } from './header/header.component';
 import { AsideComponent } from './aside/aside.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MediaMatcher} from '@angular/cdk/layout';
 
 
 @NgModule({
@@ -16,9 +18,10 @@ import { AsideComponent } from './aside/aside.component';
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    MatModule
+    MatModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [MediaMatcher],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })
